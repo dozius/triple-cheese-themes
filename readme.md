@@ -17,9 +17,9 @@ Triple Cheese supports the U-He theme system. However, it is not setup properly 
     * Windows: `<install-dir>/TripleCheese.data/data/Scripts`
     * Mac: `???`
 
-2. Rename `TripleCheese.txt` to `TripleCheese_original.txt`
+2. Rename `TripleCheese.txt` to `TripleCheese_original.txt`.
 
-3. Create a new file named `TripleCheese.txt`
+3. Create a new file named `TripleCheese.txt`.
 
 4. Open the newly created file in a text editor and add the following:
    ```
@@ -42,7 +42,7 @@ Triple Cheese supports the U-He theme system. However, it is not setup properly 
 
 ## Save Default GUI Size
 
-Triple Cheese seems to have a bug where the default size is not saved. Fortunately you can manually edit the preference.
+Triple Cheese seems to have a bug where the default size is not saved. Fortunately, you can manually edit the preference.
 
 1. Locate the support directory on your PC.
     
