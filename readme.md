@@ -44,10 +44,10 @@ Triple Cheese supports the U-He theme system. However, it is not setup properly 
 
 Triple Cheese seems to have a bug where the default size is not saved. Fortunately you can manually edit the preference.
 
-1. Locate the theme directory on your PC.
+1. Locate the support directory on your PC.
     
-    * Windows: `<install-dir>/TripleCheese.data/Support/Themes/`
-    * Mac: `/Library/Application Support/u-he/Themes/`
+    * Windows: `<install-dir>/TripleCheese.data/Support/`
+    * Mac: `/Library/Application Support/u-he/`
 
 2. Open the file `com.u-he.TripleCheese.Preferences.txt` in a text editor.
 
