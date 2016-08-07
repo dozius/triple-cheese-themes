@@ -59,6 +59,8 @@ Triple Cheese seems to have a bug where the default size is not saved. Fortunate
 
 A "flat" theme that is made entirely from vector shapes built into the plug-in (i.e. no image files are used). It comes in two flavours based on the popular syntax highlighting palettes Monokai and OneDark.
 
+Alternate versions use colour accents for the mod source labels.
+
 Screenshots at 150%.
 
 ### Monokai

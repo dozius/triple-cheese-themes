@@ -1,0 +1,1758 @@
+/*******************************************************************************
+ *
+ * Monokai Alternate Skin for U-He TripleCheese
+ *
+ * Dan Smith (aka Dozius) 2016
+ *
+ * A skin based on built in shapes using the classic Monokai colour palette.
+ *
+ ******************************************************************************/
+
+// Not sure what this is for, leave it just in case. ;)
+V_PROPERTY name='ObjectInstance' id='0' value='370'
+
+/*******************************************************************************
+ *    ____________ ___________ _____
+ *    | ___ \ ___ \  ___|  ___/  ___|
+ *    | |_/ / |_/ / |__ | |_  \ `--.
+ *    |  __/|    /|  __||  _|  `--. \
+ *    | |   | |\ \| |___| |   /\__/ /
+ *    \_|   \_| \_\____/\_|   \____/
+ *
+ ******************************************************************************/
+
+DEFAULT type='Label' property='labelTextVOffset'    id='0' value='-2.00'
+DEFAULT type='Label' property='labelTextSize'       id='0' value='9.00'
+DEFAULT type='Label' property='labelTextVAlignment' id='0' value='1'
+DEFAULT type='Label' property='labelTextAlignment'  id='0' value='1'
+DEFAULT type='Font'  property='FontVOffset'         id='0' value='-2.00'
+DEFAULT type='Font'  property='FontSize'            id='0' value='9.00'
+DEFAULT type='Font'  property='FontVAlignment'      id='0' value='1'
+DEFAULT type='Font'  property='FontAlignment'       id='0' value='1'
+
+/*******************************************************************************
+ *     _____ _____ _     _____ _   _______  _____
+ *    /  __ \  _  | |   |  _  | | | | ___ \/  ___|
+ *    | /  \/ | | | |   | | | | | | | |_/ /\ `--.
+ *    | |   | | | | |   | | | | | | |    /  `--. \
+ *    | \__/\ \_/ / |___\ \_/ / |_| | |\ \ /\__/ /
+ *     \____/\___/\_____/\___/ \___/\_| \_|\____/
+ *
+ ******************************************************************************/
+
+// Monokai palette
+COLOUR name='darkGrey'        rgba='282828FF'
+COLOUR name='gray'            rgba='888888FF'
+COLOUR name='lightGrey'       rgba='ccccccFF'
+COLOUR name='ghostWhite'      rgba='F8F8F0FF'
+COLOUR name='lightGhostWhite' rgba='F8F8F2FF'
+COLOUR name='brownGrey'       rgba='49483EFF'
+COLOUR name='brown'           rgba='75715EFF'
+COLOUR name='yellow'          rgba='E6DB74FF'
+COLOUR name='blue'            rgba='66D9EFFF'
+COLOUR name='pink'            rgba='F92672FF'
+COLOUR name='purple'          rgba='AE81FFFF'
+COLOUR name='orange'          rgba='FD971FFF'
+COLOUR name='lightOrange'     rgba='FFD569FF'
+COLOUR name='seaGreen'        rgba='529B2FFF'
+COLOUR name='green'           rgba='A6E22EFF'
+
+// Skin scheme
+COLOUR name='baseText'        rgba='F8F8F2FF' // lightGhostWhite
+COLOUR name='baseDark'        rgba='282828FF' // darkGrey
+COLOUR name='baseNormal'      rgba='49483EFF' // brownGrey
+COLOUR name='oscAccent'       rgba='A6E22EFF' // green
+COLOUR name='modAccent'       rgba='AE81FFFF' // purple
+COLOUR name='fxAccent'        rgba='F92672FF' // pink
+COLOUR name='globalAccent'    rgba='66D9EFFF' // blue
+COLOUR name='favAccent'       rgba='E6DB74FF' // yellow
+COLOUR name='junkAccent'      rgba='49483EFF' // brownGrey
+COLOUR name='favIconAccent'   rgba='E6DB74FF' // yellow
+COLOUR name='junkIconAccent'  rgba='F92672FF' // pink
+
+// Layout assistance
+COLOUR name='groupOutline'    rgba='49483E00' // Use alpha to turn on/off
+
+/*******************************************************************************
+ *     _____ ______  ___  ______ _   _ _____ _____  _____
+ *    |  __ \| ___ \/ _ \ | ___ \ | | |_   _/  __ \/  ___|
+ *    | |  \/| |_/ / /_\ \| |_/ / |_| | | | | /  \/\ `--.
+ *    | | __ |    /|  _  ||  __/|  _  | | | | |     `--. \
+ *    | |_\ \| |\ \| | | || |   | | | |_| |_| \__/\/\__/ /
+ *     \____/\_| \_\_| |_/\_|   \_| |_/\___/ \____/\____/
+ *
+ ******************************************************************************/
+
+GRAPHIC name='knobFX' path='1' type='circ'
+GR_PROPERTY graphic='knobFX' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobFX' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobFX' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobFX' name='colour'   id='0' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='1' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='2' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='3' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='4' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='5' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='6' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='7' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='colour'   id='8' value='fxAccent'
+GR_PROPERTY graphic='knobFX' name='angles'   id='0' value='-136.00'
+GR_PROPERTY graphic='knobFX' name='angles'   id='1' value='4.00'
+GR_PROPERTY graphic='knobFX' name='angles'   id='2' value='-136.00'
+GR_PROPERTY graphic='knobFX' name='angles'   id='3' value='270.00'
+GR_PROPERTY graphic='knobFX' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobFX' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobFX' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobFX' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobMod' path='1' type='circ'
+GR_PROPERTY graphic='knobMod' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobMod' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobMod' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobMod' name='colour'   id='0' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='1' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='2' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='3' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='4' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='5' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='6' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='7' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='colour'   id='8' value='modAccent'
+GR_PROPERTY graphic='knobMod' name='angles'   id='0' value='-136.00'
+GR_PROPERTY graphic='knobMod' name='angles'   id='1' value='4.00'
+GR_PROPERTY graphic='knobMod' name='angles'   id='2' value='-136.00'
+GR_PROPERTY graphic='knobMod' name='angles'   id='3' value='270.00'
+GR_PROPERTY graphic='knobMod' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobMod' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobMod' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobMod' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobBipolarMod' path='1' type='circ'
+GR_PROPERTY graphic='knobBipolarMod' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarMod' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarMod' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='0' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='1' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='2' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='3' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='4' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='5' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='6' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='7' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='colour'   id='8' value='modAccent'
+GR_PROPERTY graphic='knobBipolarMod' name='angles'   id='0' value='1.00'
+GR_PROPERTY graphic='knobBipolarMod' name='angles'   id='1' value='-136.00'
+GR_PROPERTY graphic='knobBipolarMod' name='angles'   id='2' value='-1.00'
+GR_PROPERTY graphic='knobBipolarMod' name='angles'   id='3' value='135.00'
+GR_PROPERTY graphic='knobBipolarMod' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobBipolarMod' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobBipolarMod' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobBipolarMod' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobGlobal' path='1' type='circ'
+GR_PROPERTY graphic='knobGlobal' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobGlobal' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobGlobal' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='0' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='1' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='2' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='3' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='4' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='5' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='6' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='7' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='colour'   id='8' value='globalAccent'
+GR_PROPERTY graphic='knobGlobal' name='angles'   id='0' value='-136.00'
+GR_PROPERTY graphic='knobGlobal' name='angles'   id='1' value='4.00'
+GR_PROPERTY graphic='knobGlobal' name='angles'   id='2' value='-136.00'
+GR_PROPERTY graphic='knobGlobal' name='angles'   id='3' value='270.00'
+GR_PROPERTY graphic='knobGlobal' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobGlobal' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobGlobal' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobGlobal' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobBipolarGlobal' path='1' type='circ'
+GR_PROPERTY graphic='knobBipolarGlobal' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='0' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='1' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='2' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='3' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='4' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='5' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='6' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='7' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='colour'   id='8' value='globalAccent'
+GR_PROPERTY graphic='knobBipolarGlobal' name='angles'   id='0' value='1.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='angles'   id='1' value='-136.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='angles'   id='2' value='-1.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='angles'   id='3' value='135.00'
+GR_PROPERTY graphic='knobBipolarGlobal' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobBipolarGlobal' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobBipolarGlobal' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobBipolarGlobal' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobOsc' path='1' type='circ'
+GR_PROPERTY graphic='knobOsc' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobOsc' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobOsc' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='0' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='1' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='2' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='3' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='4' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='5' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='6' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='7' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='colour'   id='8' value='oscAccent'
+GR_PROPERTY graphic='knobOsc' name='angles'   id='0' value='-136.00'
+GR_PROPERTY graphic='knobOsc' name='angles'   id='1' value='4.00'
+GR_PROPERTY graphic='knobOsc' name='angles'   id='2' value='-136.00'
+GR_PROPERTY graphic='knobOsc' name='angles'   id='3' value='270.00'
+GR_PROPERTY graphic='knobOsc' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobOsc' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobOsc' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobOsc' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobBipolarOsc' path='1' type='circ'
+GR_PROPERTY graphic='knobBipolarOsc' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='0' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='1' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='2' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='3' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='4' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='5' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='6' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='7' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='colour'   id='8' value='oscAccent'
+GR_PROPERTY graphic='knobBipolarOsc' name='angles'   id='0' value='1.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='angles'   id='1' value='-136.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='angles'   id='2' value='-1.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='angles'   id='3' value='135.00'
+GR_PROPERTY graphic='knobBipolarOsc' name='radius'   id='0' value='0.38'
+GR_PROPERTY graphic='knobBipolarOsc' name='radius'   id='1' value='0.50'
+GR_PROPERTY graphic='knobBipolarOsc' name='radius'   id='2' value='0.38'
+GR_PROPERTY graphic='knobBipolarOsc' name='radius'   id='3' value='0.50'
+
+GRAPHIC name='knobBackground' path='1' type='circ'
+GR_PROPERTY graphic='knobBackground' name='width'    id='0' value='256.00'
+GR_PROPERTY graphic='knobBackground' name='height'   id='0' value='256.00'
+GR_PROPERTY graphic='knobBackground' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='0' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='1' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='2' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='3' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='4' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='5' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='6' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='7' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='colour'   id='8' value='baseNormal'
+GR_PROPERTY graphic='knobBackground' name='angles'   id='0' value='-136.00'
+GR_PROPERTY graphic='knobBackground' name='angles'   id='1' value='270.00'
+GR_PROPERTY graphic='knobBackground' name='angles'   id='2' value='-136.00'
+GR_PROPERTY graphic='knobBackground' name='angles'   id='3' value='270.00'
+GR_PROPERTY graphic='knobBackground' name='radius'   id='0' value='0.42'
+GR_PROPERTY graphic='knobBackground' name='radius'   id='1' value='0.46'
+GR_PROPERTY graphic='knobBackground' name='radius'   id='2' value='0.42'
+GR_PROPERTY graphic='knobBackground' name='radius'   id='3' value='0.46'
+
+GRAPHIC name='favIcon' path='1' type='tick ring'
+GR_PROPERTY graphic='favIcon' name='width'       id='0' value='16.00'
+GR_PROPERTY graphic='favIcon' name='height'      id='0' value='16.00'
+GR_PROPERTY graphic='favIcon' name='scalable'    id='0' value='yes'
+GR_PROPERTY graphic='favIcon' name='minAngle'    id='0' value='0.00'
+GR_PROPERTY graphic='favIcon' name='maxAngle'    id='0' value='0.00'
+GR_PROPERTY graphic='favIcon' name='numTicks'    id='0' value='1.00'
+GR_PROPERTY graphic='favIcon' name='innerRadius' id='0' value='0.00'
+GR_PROPERTY graphic='favIcon' name='outerRadius' id='0' value='45.00'
+GR_PROPERTY graphic='favIcon' name='tickWidth'   id='0' value='0.10'
+GR_PROPERTY graphic='favIcon' name='divWidth'    id='0' value='1.00'
+GR_PROPERTY graphic='favIcon' name='divLen'      id='0' value='0.00'
+GR_PROPERTY graphic='favIcon' name='shape'       id='0' value='1.00'
+GR_PROPERTY graphic='favIcon' name='colour'      id='0' value='favIconAccent'
+
+GRAPHIC name='junkIcon' path='1' type='tick ring'
+GR_PROPERTY graphic='junkIcon' name='width'       id='0' value='16.00'
+GR_PROPERTY graphic='junkIcon' name='height'      id='0' value='16.00'
+GR_PROPERTY graphic='junkIcon' name='scalable'    id='0' value='yes'
+GR_PROPERTY graphic='junkIcon' name='minAngle'    id='0' value='-315.00'
+GR_PROPERTY graphic='junkIcon' name='maxAngle'    id='0' value='-45.00'
+GR_PROPERTY graphic='junkIcon' name='numTicks'    id='0' value='4.00'
+GR_PROPERTY graphic='junkIcon' name='innerRadius' id='0' value='0.00'
+GR_PROPERTY graphic='junkIcon' name='outerRadius' id='0' value='45.00'
+GR_PROPERTY graphic='junkIcon' name='tickWidth'   id='0' value='20.00'
+GR_PROPERTY graphic='junkIcon' name='divWidth'    id='0' value='0.00'
+GR_PROPERTY graphic='junkIcon' name='divLen'      id='0' value='60.00'
+GR_PROPERTY graphic='junkIcon' name='colour'      id='0' value='junkIconAccent'
+
+/*******************************************************************************
+ *     _____ _____ _   _ ___________ _____ _      _____
+ *    /  __ \  _  | \ | |_   _| ___ \  _  | |    /  ___|
+ *    | /  \/ | | |  \| | | | | |_/ / | | | |    \ `--.
+ *    | |   | | | | . ` | | | |    /| | | | |     `--. \
+ *    | \__/\ \_/ / |\  | | | | |\ \\ \_/ / |____/\__/ /
+ *     \____/\___/\_| \_/ \_/ \_| \_|\___/\_____/\____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Main Window' bounds='94.00 139.00 712.00 350.00' parent='root' layerMask='ffffffff'
+PROPERTY control='Main Window' name='colours'   id='0' value='baseDark'
+PROPERTY control='Main Window' name='colours'   id='1' value='none'
+PROPERTY control='Main Window' name='colours'   id='2' value='none'
+PROPERTY control='Main Window' name='colours'   id='3' value='none'
+PROPERTY control='Main Window' name='graphics'  id='0' value='none'
+PROPERTY control='Main Window' name='layer'     id='0' value='Layer 1'
+
+/*******************************************************************************
+ *     _____ _   _ ______ _____
+ *    |_   _| \ | ||  ___|  _  |
+ *      | | |  \| || |_  | | | |
+ *      | | | . ` ||  _| | | | |
+ *     _| |_| |\  || |   \ \_/ /
+ *     \___/\_| \_/\_|    \___/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Info GroupBox' bounds='6.00 6.00 330.00 30.00' parent='Main Window' layerMask='1'
+PROPERTY control='Info GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='Info GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='Info GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='Info GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='Info GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='Info GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='InfoDisplay' name='Main Display' bounds='6.00 2.00 236.00 26.00' parent='Info GroupBox' layerMask='1'
+PROPERTY control='Main Display' name='colours'         id='0' value='none'
+PROPERTY control='Main Display' name='colours'         id='1' value='none'
+PROPERTY control='Main Display' name='colours'         id='2' value='baseText'
+PROPERTY control='Main Display' name='graphics'        id='0' value='none'
+PROPERTY control='Main Display' name='bigFontScale'    id='0' value='2.40'
+PROPERTY control='Main Display' name='bottomOffset'    id='0' value='0.50'
+PROPERTY control='Main Display' name='infodisplaytype' id='0' value='FFFF'
+PARAMETER control='Main Display' port='MIDILearnMode' module='PCore' parameter='MidiL'
+PARAMETER control='Main Display' port='MIDILearnType' module='PCore' parameter='MidiT'
+PARAMETER control='Main Display' port='Display PAGES' module='PCore' parameter='PagesOn'
+
+CONTROL type='PresetSaver' name='Save Preset' bounds='244.00 4.00 30.00 10.00' parent='Info GroupBox' layerMask='1'
+PROPERTY control='Save Preset' name='colours'  id='0' value='none'
+PROPERTY control='Save Preset' name='colours'  id='1' value='none'
+PROPERTY control='Save Preset' name='colours'  id='2' value='none'
+PROPERTY control='Save Preset' name='colours'  id='3' value='none'
+PROPERTY control='Save Preset' name='colours'  id='4' value='none'
+PROPERTY control='Save Preset' name='graphics' id='0' value='none'
+PROPERTY control='Save Preset' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='Save Preset Label' bounds='0.00 0.00 30.00 10.00' parent='Save Preset' layerMask='ffffffff'
+PROPERTY control='Save Preset Label' name='colours'     id='0' value='none'
+PROPERTY control='Save Preset Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Save Preset Label' name='graphics'    id='0' value='none'
+PROPERTY control='Save Preset Label' name='labeltext'   id='0' value='Save'
+PROPERTY control='Save Preset Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='Show Presets' bounds='276.00 4.00 30.00 10.00' parent='Info GroupBox' layerMask='1'
+PROPERTY control='Show Presets' name='colours'    id='0' value='none'
+PROPERTY control='Show Presets' name='colours'    id='1' value='none'
+PROPERTY control='Show Presets' name='colours'    id='2' value='none'
+PROPERTY control='Show Presets' name='colours'    id='3' value='none'
+PROPERTY control='Show Presets' name='colours'    id='4' value='none'
+PROPERTY control='Show Presets' name='graphics'   id='0' value='none'
+PROPERTY control='Show Presets' name='graphics'   id='1' value='none'
+PROPERTY control='Show Presets' name='graphics'   id='2' value='none'
+PROPERTY control='Show Presets' name='graphics'   id='3' value='none'
+
+CONTROL type='Label' name='Show Presets Label' bounds='0.00 0.00 30.00 10.00' parent='Show Presets' layerMask='ffffffff'
+PROPERTY control='Show Presets Label' name='colours'     id='0' value='none'
+PROPERTY control='Show Presets Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Show Presets Label' name='graphics'    id='0' value='none'
+PROPERTY control='Show Presets Label' name='labeltext'   id='0' value='Show'
+PROPERTY control='Show Presets Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='Previous Preset' bounds='244.00 17.50 30.00 10.00' parent='Info GroupBox' layerMask='1'
+PROPERTY control='Previous Preset' name='colours'  id='0' value='none'
+PROPERTY control='Previous Preset' name='colours'  id='1' value='none'
+PROPERTY control='Previous Preset' name='colours'  id='2' value='none'
+PROPERTY control='Previous Preset' name='colours'  id='3' value='none'
+PROPERTY control='Previous Preset' name='colours'  id='4' value='none'
+PROPERTY control='Previous Preset' name='graphics' id='0' value='none'
+PROPERTY control='Previous Preset' name='graphics' id='1' value='none'
+PROPERTY control='Previous Preset' name='graphics' id='2' value='none'
+PROPERTY control='Previous Preset' name='graphics' id='3' value='none'
+PROPERTY control='Previous Preset' name='ActionID' id='1' value='70767072'
+
+CONTROL type='Label' name='Previous Preset Label' bounds='0.00 0.00 30.00 10.00' parent='Previous Preset' layerMask='ffffffff'
+PROPERTY control='Previous Preset Label' name='colours'     id='0' value='none'
+PROPERTY control='Previous Preset Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Previous Preset Label' name='graphics'    id='0' value='none'
+PROPERTY control='Previous Preset Label' name='labeltext'   id='0' value='<'
+PROPERTY control='Previous Preset Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='Next Preset' bounds='276.00 17.50 30.00 10.00' parent='Info GroupBox' layerMask='1'
+PROPERTY control='Next Preset' name='colours'  id='0' value='none'
+PROPERTY control='Next Preset' name='colours'  id='1' value='none'
+PROPERTY control='Next Preset' name='colours'  id='2' value='none'
+PROPERTY control='Next Preset' name='colours'  id='3' value='none'
+PROPERTY control='Next Preset' name='colours'  id='4' value='none'
+PROPERTY control='Next Preset' name='graphics' id='0' value='none'
+PROPERTY control='Next Preset' name='graphics' id='1' value='none'
+PROPERTY control='Next Preset' name='graphics' id='2' value='none'
+PROPERTY control='Next Preset' name='graphics' id='3' value='none'
+PROPERTY control='Next Preset' name='ActionID' id='1' value='6E657072'
+
+CONTROL type='Label' name='Next Preset Label' bounds='0.00 0.00 30.00 10.00' parent='Next Preset' layerMask='ffffffff'
+PROPERTY control='Next Preset Label' name='colours'     id='0' value='none'
+PROPERTY control='Next Preset Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Next Preset Label' name='graphics'    id='0' value='none'
+PROPERTY control='Next Preset Label' name='labeltext'   id='0' value='>'
+PROPERTY control='Next Preset Label' name='parentLabel' id='0' value='yes'
+
+/*******************************************************************************
+ *     _____ _____ _____ _      _____
+ *    |_   _|_   _|_   _| |    |  ___|
+ *      | |   | |   | | | |    | |__
+ *      | |   | |   | | | |    |  __|
+ *      | |  _| |_  | | | |____| |___
+ *      \_/  \___/  \_/ \_____/\____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Title GroupBox' bounds='9.00 38.00 324.00 12.00' parent='Main Window' layerMask='1'
+PROPERTY control='Title GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='Title GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='Title GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='Title GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='Title GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='Title GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Label' name='Info Description' bounds='0.00 0.00 155.00 12.00' parent='Title GroupBox' layerMask='1'
+PROPERTY control='Info Description' name='colours'   id='0' value='none'
+PROPERTY control='Info Description' name='colours'   id='1' value='baseText'
+PROPERTY control='Info Description' name='graphics'  id='0' value='none'
+PROPERTY control='Info Description' name='labeltext' id='0' value='luscious cheesy comb synthesizer'
+
+CONTROL type='Label' name='Info Rev' bounds='251.00 0.00 18.00 12.00' parent='Title GroupBox' layerMask='1'
+PROPERTY control='Info Rev' name='colours'   id='0' value='none'
+PROPERTY control='Info Rev' name='colours'   id='1' value='baseText'
+PROPERTY control='Info Rev' name='graphics'  id='0' value='none'
+PROPERTY control='Info Rev' name='labeltext' id='0' value='Rev'
+
+CONTROL type='Display' name='Revision Info' bounds='14.00 0.00 32.00 12.00' parent='Info Rev' layerMask='1'
+PROPERTY control='Revision Info' name='colours'  id='0' value='none'
+PROPERTY control='Revision Info' name='colours'  id='1' value='none'
+PROPERTY control='Revision Info' name='colours'  id='2' value='baseText'
+PROPERTY control='Revision Info' name='graphics' id='0' value='none'
+PROPERTY control='Revision Info' name='graphics' id='1' value='none'
+PARAMETER control='Revision Info' port='integer' module='PCore' parameter='Rev'
+
+CONTROL type='Button On-Off' name='UHE Info Button' bounds='0.00 0.00 280.00 12.00' parent='Title GroupBox' layerMask='1'
+PROPERTY control='UHE Info Button' name='colours'  id='0' value='none'
+PROPERTY control='UHE Info Button' name='colours'  id='1' value='none'
+PROPERTY control='UHE Info Button' name='colours'  id='2' value='invisible'
+PROPERTY control='UHE Info Button' name='colours'  id='3' value='none'
+PROPERTY control='UHE Info Button' name='colours'  id='4' value='none'
+PROPERTY control='UHE Info Button' name='graphics' id='0' value='none'
+PROPERTY control='UHE Info Button' name='graphics' id='1' value='none'
+PROPERTY control='UHE Info Button' name='graphics' id='2' value='none'
+PROPERTY control='UHE Info Button' name='graphics' id='3' value='none'
+PROPERTY control='UHE Info Button' name='ActionID' id='1' value='5F776562'
+
+/*******************************************************************************
+ *     _   _ _____   ___
+ *    | | | /  __ \ / _ \
+ *    | | | | /  \// /_\ \
+ *    | | | | |    |  _  |
+ *    \ \_/ / \__/\| | | |
+ *     \___/ \____/\_| |_/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Vca GroupBox' bounds='370.00 10.00 200.00 40.00' parent='Main Window' layerMask='1'
+PROPERTY control='Vca GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='Vca GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='Vca GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='Vca GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='Vca GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='Vca GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='Vca Pan' bounds='6.00 0.00 28.00 28.00' parent='Vca GroupBox' layerMask='1'
+PROPERTY control='Vca Pan' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vca Pan' name='graphics' id='1' value='knobBipolarGlobal'
+PROPERTY control='Vca Pan' name='graphics' id='2' value='none'
+PARAMETER control='Vca Pan' port='Knob Value' module='VCA1' parameter='Pan' valuestring='generic'
+
+CONTROL type='Label' name='Vca Pan Label' bounds='-1.00 28.00 30.00 12.00' parent='Vca Pan' layerMask='ffffffff'
+PROPERTY control='Vca Pan Label' name='colours'     id='0' value='none'
+PROPERTY control='Vca Pan Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vca Pan Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vca Pan Label' name='labeltext'   id='0' value='Pan'
+PROPERTY control='Vca Pan Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Vca Volume' bounds='46.00 0.00 28.00 28.00' parent='Vca GroupBox' layerMask='1'
+PROPERTY control='Vca Volume' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vca Volume' name='graphics' id='1' value='knobGlobal'
+PROPERTY control='Vca Volume' name='graphics' id='2' value='none'
+PARAMETER control='Vca Volume' port='Knob Value' module='VCA1' parameter='Vol' valuestring='generic'
+
+CONTROL type='Label' name='Vca Volume Label' bounds='-4.00 28.00 34.00 12.00' parent='Vca Volume' layerMask='ffffffff'
+PROPERTY control='Vca Volume Label' name='colours'     id='0' value='none'
+PROPERTY control='Vca Volume Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vca Volume Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vca Volume Label' name='labeltext'   id='0' value='Volume'
+PROPERTY control='Vca Volume Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Vca Volume ModSrc' bounds='86.00 0.00 28.00 28.00' parent='Vca GroupBox' layerMask='1'
+PROPERTY control='Vca Volume ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vca Volume ModSrc' name='graphics' id='1' value='knobBipolarGlobal'
+PROPERTY control='Vca Volume ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='Vca Volume ModSrc' port='Knob Value' module='VCA1' parameter='ModDpt' valuestring='generic'
+PARAMETER control='Vca Volume ModSrc' port='Menu'       module='VCA1' parameter='ModSrc'
+
+CONTROL type='Label' name='Vca Volume ModSrc Label' bounds='-9.00 28.00 44.00 12.00' parent='Vca Volume ModSrc' layerMask='ffffffff'
+PROPERTY control='Vca Volume ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='Vca Volume ModSrc Label' name='colours'     id='1' value='globalAccent'
+PROPERTY control='Vca Volume ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vca Volume ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='Vca Volume ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Vca Env' bounds='132.00 14.00 55.00 12.00' parent='Vca GroupBox' layerMask='1'
+PROPERTY control='Vca Env' name='colours'  id='0' value='globalAccent'
+PROPERTY control='Vca Env' name='colours'  id='1' value='globalAccent'
+PROPERTY control='Vca Env' name='colours'  id='2' value='baseDark'
+PROPERTY control='Vca Env' name='graphics' id='0' value='none'
+PROPERTY control='Vca Env' name='graphics' id='1' value='none'
+PARAMETER control='Vca Env' port='integer' module='VCA1' parameter='VCA'
+
+CONTROL type='Label' name='Vca Env Label' bounds='131.00 0.00 55.00 12.00' parent='Vca GroupBox' layerMask='ffffffff'
+PROPERTY control='Vca Env Label' name='colours'     id='0' value='none'
+PROPERTY control='Vca Env Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vca Env Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vca Env Label' name='labeltext'   id='0' value='VCA'
+PROPERTY control='Vca Env Label' name='parentLabel' id='0' value='yes'
+
+/*******************************************************************************
+ *     _   _  _____ _____ _____  _____
+ *    | | | ||  _  |_   _/  __ \|  ___|
+ *    | | | || | | | | | | /  \/| |__
+ *    | | | || | | | | | | |    |  __|
+ *    \ \_/ /\ \_/ /_| |_| \__/\| |___
+ *     \___/  \___/ \___/ \____/\____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Voice GroupBox' bounds='576.00 0.00 130.00 50.00' parent='Main Window' layerMask='1'
+PROPERTY control='Voice GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='Voice GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='Voice GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='Voice GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='Voice GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='Voice GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='Voice Porta' bounds='0.00 10.00 28.00 28.00' parent='Voice GroupBox' layerMask='1'
+PROPERTY control='Voice Porta' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Voice Porta' name='graphics' id='1' value='knobBipolarGlobal'
+PROPERTY control='Voice Porta' name='graphics' id='2' value='none'
+PARAMETER control='Voice Porta' port='Knob Value' module='VCC' parameter='Porta' valuestring='generic'
+
+CONTROL type='Label' name='Voice Porta Label' bounds='0.00 28.00 30.00 12.00' parent='Voice Porta' layerMask='ffffffff'
+PROPERTY control='Voice Porta Label' name='colours'     id='0' value='none'
+PROPERTY control='Voice Porta Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Voice Porta Label' name='graphics'    id='0' value='none'
+PROPERTY control='Voice Porta Label' name='labeltext'   id='0' value='Porta'
+PROPERTY control='Voice Porta Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Voice Amount' bounds='40.00 9.00 50.00 12.00' parent='Voice GroupBox' layerMask='1'
+PROPERTY control='Voice Amount' name='colours'  id='0' value='globalAccent'
+PROPERTY control='Voice Amount' name='colours'  id='1' value='globalAccent'
+PROPERTY control='Voice Amount' name='colours'  id='2' value='baseDark'
+PROPERTY control='Voice Amount' name='graphics' id='0' value='none'
+PROPERTY control='Voice Amount' name='graphics' id='1' value='none'
+PARAMETER control='Voice Amount' port='integer' module='VCC' parameter='Voices'
+
+CONTROL type='Label' name='Voice Amount Label' bounds='50.00 0.00 36.00 12.00' parent='Voice Amount' layerMask='ffffffff'
+PROPERTY control='Voice Amount Label' name='colours'     id='0' value='none'
+PROPERTY control='Voice Amount Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Voice Amount Label' name='graphics'    id='0' value='none'
+PROPERTY control='Voice Amount Label' name='labeltext'   id='0' value='Voices'
+PROPERTY control='Voice Amount Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Voice Mode' bounds='40.00 23.00 50.00 12.00' parent='Voice GroupBox' layerMask='1'
+PROPERTY control='Voice Mode' name='colours'  id='0' value='globalAccent'
+PROPERTY control='Voice Mode' name='colours'  id='1' value='globalAccent'
+PROPERTY control='Voice Mode' name='colours'  id='2' value='baseDark'
+PROPERTY control='Voice Mode' name='graphics' id='0' value='none'
+PROPERTY control='Voice Mode' name='graphics' id='1' value='none'
+PARAMETER control='Voice Mode' port='integer' module='VCC' parameter='Mode'
+
+CONTROL type='Label' name='Voice Mode Label' bounds='50.00 0.00 32.00 12.00' parent='Voice Mode' layerMask='ffffffff'
+PROPERTY control='Voice Mode Label' name='colours'     id='0' value='none'
+PROPERTY control='Voice Mode Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Voice Mode Label' name='graphics'    id='0' value='none'
+PROPERTY control='Voice Mode Label' name='labeltext'   id='0' value='Mode'
+PROPERTY control='Voice Mode Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Voice Pitch Bend' bounds='40.00 37.00 50.00 12.00' parent='Voice GroupBox' layerMask='1'
+PROPERTY control='Voice Pitch Bend' name='colours'  id='0' value='globalAccent'
+PROPERTY control='Voice Pitch Bend' name='colours'  id='1' value='globalAccent'
+PROPERTY control='Voice Pitch Bend' name='colours'  id='2' value='baseDark'
+PROPERTY control='Voice Pitch Bend' name='graphics' id='0' value='none'
+PROPERTY control='Voice Pitch Bend' name='graphics' id='1' value='none'
+PARAMETER control='Voice Pitch Bend' port='integer' module='VCC' parameter='PB'
+
+CONTROL type='Label' name='Voice Pitch Bend Label' bounds='50.00 0.00 30.00 12.00' parent='Voice Pitch Bend' layerMask='ffffffff'
+PROPERTY control='Voice Pitch Bend Label' name='colours'     id='0' value='none'
+PROPERTY control='Voice Pitch Bend Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Voice Pitch Bend Label' name='graphics'    id='0' value='none'
+PROPERTY control='Voice Pitch Bend Label' name='labeltext'   id='0' value='Bend'
+PROPERTY control='Voice Pitch Bend Label' name='parentLabel' id='0' value='yes'
+
+/*******************************************************************************
+ *    ___  ______________ _   _ _      _____   __
+ *    |  \/  |  _  |  _  \ | | | |    |  ___| /  |
+ *    | .  . | | | | | | | | | | |    | |__   `| |
+ *    | |\/| | | | | | | | | | | |    |  __|   | |
+ *    | |  | \ \_/ / |/ /| |_| | |____| |___  _| |_
+ *    \_|  |_/\___/|___/  \___/\_____/\____/  \___/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='M1 GroupBox' bounds='6.00 56.00 330.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='M1 GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='M1 GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='M1 GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='M1 GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='M1 GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='M1 GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='M1 Tune' bounds='6.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Tune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Tune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Tune' name='graphics' id='2' value='none'
+PARAMETER control='M1 Tune' port='Knob Value' module='CSO1' parameter='Tune' valuestring='generic'
+
+CONTROL type='Label' name='M1 Tune Label' bounds='-8.00 28.00 42.00 11.00' parent='M1 Tune' layerMask='ffffffff'
+PROPERTY control='M1 Tune Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Tune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Tune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Tune Label' name='labeltext'   id='0' value='Tune'
+PROPERTY control='M1 Tune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Detune' bounds='46.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Detune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Detune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Detune' name='graphics' id='2' value='none'
+PARAMETER control='M1 Detune' port='Knob Value' module='CSO1' parameter='Detn' valuestring='generic'
+
+CONTROL type='Label' name='M1 Detune Label' bounds='-8.00 28.00 42.00 11.00' parent='M1 Detune' layerMask='ffffffff'
+PROPERTY control='M1 Detune Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Detune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Detune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Detune Label' name='labeltext'   id='0' value='Detune'
+PROPERTY control='M1 Detune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Vibrato' bounds='86.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Vibrato' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Vibrato' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M1 Vibrato' name='graphics' id='2' value='none'
+PARAMETER control='M1 Vibrato' port='Knob Value' module='CSO1' parameter='VtoD' valuestring='generic'
+
+CONTROL type='Label' name='M1 Vibrato Label' bounds='-8.00 28.00 42.00 11.00' parent='M1 Vibrato' layerMask='ffffffff'
+PROPERTY control='M1 Vibrato Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Vibrato Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Vibrato Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Vibrato Label' name='labeltext'   id='0' value='Vibrato'
+PROPERTY control='M1 Vibrato Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Damp' bounds='126.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Damp' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Damp' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M1 Damp' name='graphics' id='2' value='none'
+PARAMETER control='M1 Damp' port='Knob Value' module='CSO1' parameter='Damp' valuestring='generic'
+
+CONTROL type='Label' name='M1 Damp Label' bounds='-8.00 28.00 42.00 11.00' parent='M1 Damp' layerMask='ffffffff'
+PROPERTY control='M1 Damp Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Damp Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Damp Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Damp Label' name='labeltext'   id='0' value='Damp'
+PROPERTY control='M1 Damp Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Damp ModSrc' bounds='126.00 46.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Damp ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Damp ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Damp ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M1 Damp ModSrc' port='Knob Value' module='CSO1' parameter='DmpDpt' valuestring='generic'
+PARAMETER control='M1 Damp ModSrc' port='Menu'       module='CSO1' parameter='DmpSrc'
+
+CONTROL type='Label' name='M1 Damp ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Damp ModSrc' layerMask='ffffffff'
+PROPERTY control='M1 Damp ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Damp ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M1 Damp ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Damp ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M1 Damp ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Tone' bounds='180.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Tone' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Tone' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M1 Tone' name='graphics' id='2' value='none'
+PARAMETER control='M1 Tone' port='Knob Value' module='CSO1' parameter='Tne' valuestring='generic'
+
+CONTROL type='Label' name='M1 Tone Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Tone' layerMask='ffffffff'
+PROPERTY control='M1 Tone Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Tone Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Tone Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Tone Label' name='labeltext'   id='0' value='Tone'
+PROPERTY control='M1 Tone Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Tone ModSrc' bounds='180.00 46.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Tone ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Tone ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Tone ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M1 Tone ModSrc' port='Knob Value' module='CSO1' parameter='TneDpt' valuestring='generic'
+PARAMETER control='M1 Tone ModSrc' port='Menu'       module='CSO1' parameter='TneSrc'
+
+CONTROL type='Label' name='M1 Tone ModSrc Label' bounds='-10.00 28.00 46.00 12.00' parent='M1 Tone ModSrc' layerMask='ffffffff'
+PROPERTY control='M1 Tone ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Tone ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M1 Tone ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Tone ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M1 Tone ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Volume' bounds='234.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Volume' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Volume' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M1 Volume' name='graphics' id='2' value='none'
+PARAMETER control='M1 Volume' port='Knob Value' module='CSO1' parameter='Vol' valuestring='generic'
+
+CONTROL type='Label' name='M1 Volume Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Volume' layerMask='ffffffff'
+PROPERTY control='M1 Volume Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Volume Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Volume Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Volume Label' name='labeltext'   id='0' value='Volume'
+PROPERTY control='M1 Volume Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Volume ModSrc' bounds='234.00 46.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Volume ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Volume ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Volume ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M1 Volume ModSrc' port='Knob Value' module='CSO1' parameter='VolDt' valuestring='generic'
+PARAMETER control='M1 Volume ModSrc' port='Menu'       module='CSO1' parameter='VolSc'
+
+CONTROL type='Label' name='M1 Volume ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Volume ModSrc' layerMask='ffffffff'
+PROPERTY control='M1 Volume ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Volume ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M1 Volume ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Volume ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M1 Volume ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Pan' bounds='288.00 6.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Pan' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Pan' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Pan' name='graphics' id='2' value='none'
+PARAMETER control='M1 Pan' port='Knob Value' module='CSO1' parameter='Pan' valuestring='generic'
+
+CONTROL type='Label' name='M1 Pan Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Pan' layerMask='ffffffff'
+PROPERTY control='M1 Pan Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Pan Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M1 Pan Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Pan Label' name='labeltext'   id='0' value='Pan'
+PROPERTY control='M1 Pan Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M1 Pan ModSrc' bounds='288.00 46.00 28.00 28.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Pan ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M1 Pan ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M1 Pan ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M1 Pan ModSrc' port='Knob Value' module='CSO1' parameter='PanDt' valuestring='generic'
+PARAMETER control='M1 Pan ModSrc' port='Menu'       module='CSO1' parameter='PanSc'
+
+CONTROL type='Label' name='M1 Pan ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M1 Pan ModSrc' layerMask='ffffffff'
+PROPERTY control='M1 Pan ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M1 Pan ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M1 Pan ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M1 Pan ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M1 Pan ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='M1 Active' bounds='7.00 54.00 26.00 12.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Active' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M1 Active' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M1 Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='M1 Active' name='colours'  id='3' value='none'
+PROPERTY control='M1 Active' name='colours'  id='4' value='none'
+PROPERTY control='M1 Active' name='graphics' id='0' value='none'
+PROPERTY control='M1 Active' name='graphics' id='1' value='none'
+PROPERTY control='M1 Active' name='graphics' id='2' value='none'
+PROPERTY control='M1 Active' name='graphics' id='3' value='none'
+PARAMETER control='M1 Active' port='Button Value' module='VCC' parameter='#CSO1'
+
+CONTROL type='Display' name='M1 Wave' bounds='47.00 54.00 66.00 12.00' parent='M1 GroupBox' layerMask='1'
+PROPERTY control='M1 Wave' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M1 Wave' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M1 Wave' name='colours'  id='2' value='baseDark'
+PROPERTY control='M1 Wave' name='graphics' id='0' value='none'
+PROPERTY control='M1 Wave' name='graphics' id='1' value='none'
+PARAMETER control='M1 Wave' port='integer' module='CSO1' parameter='Wave'
+
+/*******************************************************************************
+ *    ___  ______________ _   _ _      _____   _____
+ *    |  \/  |  _  |  _  \ | | | |    |  ___| / __  \
+ *    | .  . | | | | | | | | | | |    | |__   `' / /'
+ *    | |\/| | | | | | | | | | | |    |  __|    / /
+ *    | |  | \ \_/ / |/ /| |_| | |____| |___  ./ /___
+ *    \_|  |_/\___/|___/  \___/\_____/\____/  \_____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='M2 GroupBox' bounds='6.00 152.00 330.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='M2 GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='M2 GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='M2 GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='M2 GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='M2 GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='M2 GroupBox' name='layer' id='0' value='Layer 1'
+
+CONTROL type='Knob' name='M2 Tune' bounds='6.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Tune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Tune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Tune' name='graphics' id='2' value='none'
+PARAMETER control='M2 Tune' port='Knob Value' module='CSO2' parameter='Tune' valuestring='generic'
+
+CONTROL type='Label' name='M2 Tune Label' bounds='-8.00 28.00 42.00 11.00' parent='M2 Tune' layerMask='ffffffff'
+PROPERTY control='M2 Tune Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Tune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Tune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Tune Label' name='labeltext'   id='0' value='Tune'
+PROPERTY control='M2 Tune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Detune' bounds='46.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Detune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Detune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Detune' name='graphics' id='2' value='none'
+PARAMETER control='M2 Detune' port='Knob Value' module='CSO2' parameter='Detn' valuestring='generic'
+
+CONTROL type='Label' name='M2 Detune Label' bounds='-8.00 28.00 42.00 11.00' parent='M2 Detune' layerMask='ffffffff'
+PROPERTY control='M2 Detune Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Detune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Detune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Detune Label' name='labeltext'   id='0' value='Detune'
+PROPERTY control='M2 Detune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Vibrato' bounds='86.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Vibrato' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Vibrato' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M2 Vibrato' name='graphics' id='2' value='none'
+PARAMETER control='M2 Vibrato' port='Knob Value' module='CSO2' parameter='VtoD' valuestring='generic'
+
+CONTROL type='Label' name='M2 Vibrato Label' bounds='-8.00 28.00 42.00 11.00' parent='M2 Vibrato' layerMask='ffffffff'
+PROPERTY control='M2 Vibrato Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Vibrato Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Vibrato Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Vibrato Label' name='labeltext'   id='0' value='Vibrato'
+PROPERTY control='M2 Vibrato Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Damp' bounds='126.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Damp' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Damp' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M2 Damp' name='graphics' id='2' value='none'
+PARAMETER control='M2 Damp' port='Knob Value' module='CSO2' parameter='Damp' valuestring='generic'
+
+CONTROL type='Label' name='M2 Damp Label' bounds='-8.00 28.00 42.00 11.00' parent='M2 Damp' layerMask='ffffffff'
+PROPERTY control='M2 Damp Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Damp Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Damp Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Damp Label' name='labeltext'   id='0' value='Damp'
+PROPERTY control='M2 Damp Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Damp ModSrc' bounds='126.00 46.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Damp ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Damp ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Damp ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M2 Damp ModSrc' port='Knob Value' module='CSO2' parameter='DmpDpt' valuestring='generic'
+PARAMETER control='M2 Damp ModSrc' port='Menu'       module='CSO2' parameter='DmpSrc'
+
+CONTROL type='Label' name='M2 Damp ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Damp ModSrc' layerMask='ffffffff'
+PROPERTY control='M2 Damp ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Damp ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M2 Damp ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Damp ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M2 Damp ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Tone' bounds='180.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Tone' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Tone' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M2 Tone' name='graphics' id='2' value='none'
+PARAMETER control='M2 Tone' port='Knob Value' module='CSO2' parameter='Tne' valuestring='generic'
+
+CONTROL type='Label' name='M2 Tone Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Tone' layerMask='ffffffff'
+PROPERTY control='M2 Tone Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Tone Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Tone Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Tone Label' name='labeltext'   id='0' value='Tone'
+PROPERTY control='M2 Tone Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Tone ModSrc' bounds='180.00 46.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Tone ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Tone ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Tone ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M2 Tone ModSrc' port='Knob Value' module='CSO2' parameter='TneDpt' valuestring='generic'
+PARAMETER control='M2 Tone ModSrc' port='Menu'       module='CSO2' parameter='TneSrc'
+
+CONTROL type='Label' name='M2 Tone ModSrc Label' bounds='-10.00 28.00 46.00 12.00' parent='M2 Tone ModSrc' layerMask='ffffffff'
+PROPERTY control='M2 Tone ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Tone ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M2 Tone ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Tone ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M2 Tone ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Volume' bounds='234.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Volume' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Volume' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M2 Volume' name='graphics' id='2' value='none'
+PARAMETER control='M2 Volume' port='Knob Value' module='CSO2' parameter='Vol' valuestring='generic'
+
+CONTROL type='Label' name='M2 Volume Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Volume' layerMask='ffffffff'
+PROPERTY control='M2 Volume Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Volume Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Volume Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Volume Label' name='labeltext'   id='0' value='Volume'
+PROPERTY control='M2 Volume Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Volume ModSrc' bounds='234.00 46.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Volume ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Volume ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Volume ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M2 Volume ModSrc' port='Knob Value' module='CSO2' parameter='VolDt' valuestring='generic'
+PARAMETER control='M2 Volume ModSrc' port='Menu'       module='CSO2' parameter='VolSc'
+
+CONTROL type='Label' name='M2 Volume ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Volume ModSrc' layerMask='ffffffff'
+PROPERTY control='M2 Volume ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Volume ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M2 Volume ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Volume ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M2 Volume ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Pan' bounds='288.00 6.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Pan' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Pan' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Pan' name='graphics' id='2' value='none'
+PARAMETER control='M2 Pan' port='Knob Value' module='CSO2' parameter='Pan' valuestring='generic'
+
+CONTROL type='Label' name='M2 Pan Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Pan' layerMask='ffffffff'
+PROPERTY control='M2 Pan Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Pan Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M2 Pan Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Pan Label' name='labeltext'   id='0' value='Pan'
+PROPERTY control='M2 Pan Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M2 Pan ModSrc' bounds='288.00 46.00 28.00 28.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Pan ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M2 Pan ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M2 Pan ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M2 Pan ModSrc' port='Knob Value' module='CSO2' parameter='PanDt' valuestring='generic'
+PARAMETER control='M2 Pan ModSrc' port='Menu'       module='CSO2' parameter='PanSc'
+
+CONTROL type='Label' name='M2 Pan ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M2 Pan ModSrc' layerMask='ffffffff'
+PROPERTY control='M2 Pan ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M2 Pan ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M2 Pan ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M2 Pan ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M2 Pan ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='M2 Active' bounds='7.00 54.00 26.00 12.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Active' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M2 Active' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M2 Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='M2 Active' name='colours'  id='3' value='none'
+PROPERTY control='M2 Active' name='colours'  id='4' value='none'
+PROPERTY control='M2 Active' name='graphics' id='0' value='none'
+PROPERTY control='M2 Active' name='graphics' id='1' value='none'
+PROPERTY control='M2 Active' name='graphics' id='2' value='none'
+PROPERTY control='M2 Active' name='graphics' id='3' value='none'
+PARAMETER control='M2 Active' port='Button Value' module='VCC' parameter='#CSO2'
+
+CONTROL type='Display' name='M2 Wave' bounds='47.00 54.00 66.00 12.00' parent='M2 GroupBox' layerMask='1'
+PROPERTY control='M2 Wave' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M2 Wave' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M2 Wave' name='colours'  id='2' value='baseDark'
+PROPERTY control='M2 Wave' name='graphics' id='0' value='none'
+PROPERTY control='M2 Wave' name='graphics' id='1' value='none'
+PARAMETER control='M2 Wave' port='integer' module='CSO2' parameter='Wave'
+
+/*******************************************************************************
+ *    ___  ______________ _   _ _      _____   _____
+ *    |  \/  |  _  |  _  \ | | | |    |  ___| |____ |
+ *    | .  . | | | | | | | | | | |    | |__       / /
+ *    | |\/| | | | | | | | | | | |    |  __|      \ \
+ *    | |  | \ \_/ / |/ /| |_| | |____| |___  .___/ /
+ *    \_|  |_/\___/|___/  \___/\_____/\____/  \____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='M3 GroupBox' bounds='6.00 248.00 330.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='M3 GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='M3 GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='M3 GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='M3 GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='M3 GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='M3 GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='M3 Tune' bounds='6.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Tune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Tune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Tune' name='graphics' id='2' value='none'
+PARAMETER control='M3 Tune' port='Knob Value' module='CSO3' parameter='Tune' valuestring='generic'
+
+CONTROL type='Label' name='M3 Tune Label' bounds='-8.00 28.00 42.00 11.00' parent='M3 Tune' layerMask='ffffffff'
+PROPERTY control='M3 Tune Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Tune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Tune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Tune Label' name='labeltext'   id='0' value='Tune'
+PROPERTY control='M3 Tune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Detune' bounds='46.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Detune' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Detune' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Detune' name='graphics' id='2' value='none'
+PARAMETER control='M3 Detune' port='Knob Value' module='CSO3' parameter='Detn' valuestring='generic'
+
+CONTROL type='Label' name='M3 Detune Label' bounds='-8.00 28.00 42.00 11.00' parent='M3 Detune' layerMask='ffffffff'
+PROPERTY control='M3 Detune Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Detune Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Detune Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Detune Label' name='labeltext'   id='0' value='Detune'
+PROPERTY control='M3 Detune Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Vibrato' bounds='86.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Vibrato' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Vibrato' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M3 Vibrato' name='graphics' id='2' value='none'
+PARAMETER control='M3 Vibrato' port='Knob Value' module='CSO3' parameter='VtoD' valuestring='generic'
+
+CONTROL type='Label' name='M3 Vibrato Label' bounds='-8.00 28.00 42.00 11.00' parent='M3 Vibrato' layerMask='ffffffff'
+PROPERTY control='M3 Vibrato Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Vibrato Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Vibrato Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Vibrato Label' name='labeltext'   id='0' value='Vibrato'
+PROPERTY control='M3 Vibrato Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Damp' bounds='126.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Damp' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Damp' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M3 Damp' name='graphics' id='2' value='none'
+PARAMETER control='M3 Damp' port='Knob Value' module='CSO3' parameter='Damp' valuestring='generic'
+
+CONTROL type='Label' name='M3 Damp Label' bounds='-8.00 28.00 42.00 11.00' parent='M3 Damp' layerMask='ffffffff'
+PROPERTY control='M3 Damp Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Damp Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Damp Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Damp Label' name='labeltext'   id='0' value='Damp'
+PROPERTY control='M3 Damp Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Damp ModSrc' bounds='126.00 46.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Damp ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Damp ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Damp ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M3 Damp ModSrc' port='Knob Value' module='CSO3' parameter='DmpDpt' valuestring='generic'
+PARAMETER control='M3 Damp ModSrc' port='Menu'       module='CSO3' parameter='DmpSrc'
+
+CONTROL type='Label' name='M3 Damp ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Damp ModSrc' layerMask='ffffffff'
+PROPERTY control='M3 Damp ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Damp ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M3 Damp ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Damp ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M3 Damp ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Tone' bounds='180.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Tone' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Tone' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M3 Tone' name='graphics' id='2' value='none'
+PARAMETER control='M3 Tone' port='Knob Value' module='CSO3' parameter='Tne' valuestring='generic'
+
+CONTROL type='Label' name='M3 Tone Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Tone' layerMask='ffffffff'
+PROPERTY control='M3 Tone Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Tone Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Tone Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Tone Label' name='labeltext'   id='0' value='Tone'
+PROPERTY control='M3 Tone Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Tone ModSrc' bounds='180.00 46.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Tone ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Tone ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Tone ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M3 Tone ModSrc' port='Knob Value' module='CSO3' parameter='TneDpt' valuestring='generic'
+PARAMETER control='M3 Tone ModSrc' port='Menu'       module='CSO3' parameter='TneSrc'
+
+CONTROL type='Label' name='M3 Tone ModSrc Label' bounds='-10.00 28.00 46.00 12.00' parent='M3 Tone ModSrc' layerMask='ffffffff'
+PROPERTY control='M3 Tone ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Tone ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M3 Tone ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Tone ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M3 Tone ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Volume' bounds='234.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Volume' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Volume' name='graphics' id='1' value='knobOsc'
+PROPERTY control='M3 Volume' name='graphics' id='2' value='none'
+PARAMETER control='M3 Volume' port='Knob Value' module='CSO3' parameter='Vol' valuestring='generic'
+
+CONTROL type='Label' name='M3 Volume Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Volume' layerMask='ffffffff'
+PROPERTY control='M3 Volume Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Volume Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Volume Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Volume Label' name='labeltext'   id='0' value='Volume'
+PROPERTY control='M3 Volume Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Volume ModSrc' bounds='234.00 46.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Volume ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Volume ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Volume ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M3 Volume ModSrc' port='Knob Value' module='CSO3' parameter='VolDt' valuestring='generic'
+PARAMETER control='M3 Volume ModSrc' port='Menu'       module='CSO3' parameter='VolSc'
+
+CONTROL type='Label' name='M3 Volume ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Volume ModSrc' layerMask='ffffffff'
+PROPERTY control='M3 Volume ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Volume ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M3 Volume ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Volume ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M3 Volume ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Pan' bounds='288.00 6.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Pan' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Pan' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Pan' name='graphics' id='2' value='none'
+PARAMETER control='M3 Pan' port='Knob Value' module='CSO3' parameter='Pan' valuestring='generic'
+
+CONTROL type='Label' name='M3 Pan Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Pan' layerMask='ffffffff'
+PROPERTY control='M3 Pan Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Pan Label' name='colours'     id='1' value='baseText'
+PROPERTY control='M3 Pan Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Pan Label' name='labeltext'   id='0' value='Pan'
+PROPERTY control='M3 Pan Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='M3 Pan ModSrc' bounds='288.00 46.00 28.00 28.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Pan ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='M3 Pan ModSrc' name='graphics' id='1' value='knobBipolarOsc'
+PROPERTY control='M3 Pan ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='M3 Pan ModSrc' port='Knob Value' module='CSO3' parameter='PanDt' valuestring='generic'
+PARAMETER control='M3 Pan ModSrc' port='Menu'       module='CSO3' parameter='PanSc'
+
+CONTROL type='Label' name='M3 Pan ModSrc Label' bounds='-10.00 28.00 48.00 11.00' parent='M3 Pan ModSrc' layerMask='ffffffff'
+PROPERTY control='M3 Pan ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='M3 Pan ModSrc Label' name='colours'     id='1' value='oscAccent'
+PROPERTY control='M3 Pan ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='M3 Pan ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='M3 Pan ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='M3 Active' bounds='7.00 54.00 26.00 12.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Active' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M3 Active' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M3 Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='M3 Active' name='colours'  id='3' value='none'
+PROPERTY control='M3 Active' name='colours'  id='4' value='none'
+PROPERTY control='M3 Active' name='graphics' id='0' value='none'
+PROPERTY control='M3 Active' name='graphics' id='1' value='none'
+PROPERTY control='M3 Active' name='graphics' id='2' value='none'
+PROPERTY control='M3 Active' name='graphics' id='3' value='none'
+PARAMETER control='M3 Active' port='Button Value' module='VCC' parameter='#CSO3'
+
+CONTROL type='Display' name='M3 Wave' bounds='47.00 54.00 66.00 12.00' parent='M3 GroupBox' layerMask='1'
+PROPERTY control='M3 Wave' name='colours'  id='0' value='oscAccent'
+PROPERTY control='M3 Wave' name='colours'  id='1' value='oscAccent'
+PROPERTY control='M3 Wave' name='colours'  id='2' value='baseDark'
+PROPERTY control='M3 Wave' name='graphics' id='0' value='none'
+PROPERTY control='M3 Wave' name='graphics' id='1' value='none'
+PARAMETER control='M3 Wave' port='integer' module='CSO3' parameter='Wave'
+
+/*******************************************************************************
+ *     _____ _   _ _   _ _____ _     ___________ _____ _____
+ *    |  ___| \ | | | | |  ___| |   |  _  | ___ \  ___/  ___|
+ *    | |__ |  \| | | | | |__ | |   | | | | |_/ / |__ \ `--.
+ *    |  __|| . ` | | | |  __|| |   | | | |  __/|  __| `--. \
+ *    | |___| |\  \ \_/ / |___| |___\ \_/ / |   | |___/\__/ /
+ *    \____/\_| \_/\___/\____/\_____/\___/\_|   \____/\____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Env GroupBox' bounds='370.00 56.00 336.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='Env GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='Env GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='Env GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='Env GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='Env GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='Env GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='Env1 A' bounds='6.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 A' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 A' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env1 A' name='graphics' id='2' value='none'
+PARAMETER control='Env1 A' port='Knob Value' module='ENV1' parameter='Atk' valuestring='generic'
+
+CONTROL type='Label' name='Env1 A Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 A' layerMask='ffffffff'
+PROPERTY control='Env1 A Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 A Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 A Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 A Label' name='labeltext'   id='0' value='Attack'
+PROPERTY control='Env1 A Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env1 D' bounds='46.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 D' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 D' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env1 D' name='graphics' id='2' value='none'
+PARAMETER control='Env1 D' port='Knob Value' module='ENV1' parameter='Dec' valuestring='generic'
+
+CONTROL type='Label' name='Env1 D Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 D' layerMask='ffffffff'
+PROPERTY control='Env1 D Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 D Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 D Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 D Label' name='labeltext'   id='0' value='Decay'
+PROPERTY control='Env1 D Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env1 S' bounds='86.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 S' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 S' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env1 S' name='graphics' id='2' value='none'
+PARAMETER control='Env1 S' port='Knob Value' module='ENV1' parameter='Sus' valuestring='generic'
+
+CONTROL type='Label' name='Env1 S Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 S' layerMask='ffffffff'
+PROPERTY control='Env1 S Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 S Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 S Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 S Label' name='labeltext'   id='0' value='Sustain'
+PROPERTY control='Env1 S Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env1 FR' bounds='126.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 FR' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 FR' name='graphics' id='1' value='knobBipolarMod'
+PROPERTY control='Env1 FR' name='graphics' id='2' value='none'
+PARAMETER control='Env1 FR' port='Knob Value' module='ENV1' parameter='SusT' valuestring='generic'
+
+CONTROL type='Label' name='Env1 FR Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 FR' layerMask='ffffffff'
+PROPERTY control='Env1 FR Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 FR Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 FR Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 FR Label' name='labeltext'   id='0' value='F/R'
+PROPERTY control='Env1 FR Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env1 R' bounds='166.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 R' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 R' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env1 R' name='graphics' id='2' value='none'
+PARAMETER control='Env1 R' port='Knob Value' module='ENV1' parameter='Rel' valuestring='generic'
+
+CONTROL type='Label' name='Env1 R Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 R' layerMask='ffffffff'
+PROPERTY control='Env1 R Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 R Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 R Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 R Label' name='labeltext'   id='0' value='Release'
+PROPERTY control='Env1 R Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env1 Velocity' bounds='206.00 6.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 Velocity' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env1 Velocity' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env1 Velocity' name='graphics' id='2' value='none'
+PARAMETER control='Env1 Velocity' port='Knob Value' module='ENV1' parameter='Vel' valuestring='generic'
+
+CONTROL type='Label' name='Env1 Velocity Label' bounds='-2.00 28.00 33.00 12.00' parent='Env1 Velocity' layerMask='ffffffff'
+PROPERTY control='Env1 Velocity Label' name='colours'     id='0' value='none'
+PROPERTY control='Env1 Velocity Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env1 Velocity Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env1 Velocity Label' name='labeltext'   id='0' value='Velocity'
+PROPERTY control='Env1 Velocity Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Env1 Mode' bounds='246.00 20.00 50.00 12.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env1 Mode' name='colours'  id='0' value='modAccent'
+PROPERTY control='Env1 Mode' name='colours'  id='1' value='modAccent'
+PROPERTY control='Env1 Mode' name='colours'  id='2' value='baseDark'
+PROPERTY control='Env1 Mode' name='graphics' id='0' value='none'
+PROPERTY control='Env1 Mode' name='graphics' id='1' value='none'
+PARAMETER control='Env1 Mode' port='integer' module='ENV1' parameter='Mode'
+
+CONTROL type='Label' name='Env1 Label' bounds='0.00 -14.00 50.00 12.00' parent='Env1 Mode' layerMask='1'
+PROPERTY control='Env1 Label' name='colours'   id='0' value='none'
+PROPERTY control='Env1 Label' name='colours'   id='1' value='baseText'
+PROPERTY control='Env1 Label' name='graphics'  id='0' value='none'
+PROPERTY control='Env1 Label' name='labeltext' id='0' value='Envelope1'
+
+/* Env 2 **********************************************************************/
+
+CONTROL type='Knob' name='Env2 A' bounds='6.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 A' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 A' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env2 A' name='graphics' id='2' value='none'
+PARAMETER control='Env2 A' port='Knob Value' module='ENV2' parameter='Atk' valuestring='generic'
+
+CONTROL type='Label' name='Env2 A Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 A' layerMask='ffffffff'
+PROPERTY control='Env2 A Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 A Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 A Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 A Label' name='labeltext'   id='0' value='Attack'
+PROPERTY control='Env2 A Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env2 D' bounds='46.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 D' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 D' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env2 D' name='graphics' id='2' value='none'
+PARAMETER control='Env2 D' port='Knob Value' module='ENV2' parameter='Dec' valuestring='generic'
+
+CONTROL type='Label' name='Env2 D Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 D' layerMask='ffffffff'
+PROPERTY control='Env2 D Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 D Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 D Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 D Label' name='labeltext'   id='0' value='Decay'
+PROPERTY control='Env2 D Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env2 S' bounds='86.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 S' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 S' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env2 S' name='graphics' id='2' value='none'
+PARAMETER control='Env2 S' port='Knob Value' module='ENV2' parameter='Sus' valuestring='generic'
+
+CONTROL type='Label' name='Env2 S Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 S' layerMask='ffffffff'
+PROPERTY control='Env2 S Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 S Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 S Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 S Label' name='labeltext'   id='0' value='Sustain'
+PROPERTY control='Env2 S Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env2 FR' bounds='126.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 FR' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 FR' name='graphics' id='1' value='knobBipolarMod'
+PROPERTY control='Env2 FR' name='graphics' id='2' value='none'
+PARAMETER control='Env2 FR' port='Knob Value' module='ENV2' parameter='SusT' valuestring='generic'
+
+CONTROL type='Label' name='Env2 FR Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 FR' layerMask='ffffffff'
+PROPERTY control='Env2 FR Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 FR Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 FR Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 FR Label' name='labeltext'   id='0' value='F/R'
+PROPERTY control='Env2 FR Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env2 R' bounds='166.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 R' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 R' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env2 R' name='graphics' id='2' value='none'
+PARAMETER control='Env2 R' port='Knob Value' module='ENV2' parameter='Rel' valuestring='generic'
+
+CONTROL type='Label' name='Env2 R Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 R' layerMask='ffffffff'
+PROPERTY control='Env2 R Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 R Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 R Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 R Label' name='labeltext'   id='0' value='Release'
+PROPERTY control='Env2 R Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Env2 Velocity' bounds='206.00 46.00 28.00 28.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 Velocity' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Env2 Velocity' name='graphics' id='1' value='knobMod'
+PROPERTY control='Env2 Velocity' name='graphics' id='2' value='none'
+PARAMETER control='Env2 Velocity' port='Knob Value' module='ENV2' parameter='Vel' valuestring='generic'
+
+CONTROL type='Label' name='Env2 Velocity Label' bounds='-2.00 28.00 33.00 12.00' parent='Env2 Velocity' layerMask='ffffffff'
+PROPERTY control='Env2 Velocity Label' name='colours'     id='0' value='none'
+PROPERTY control='Env2 Velocity Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Env2 Velocity Label' name='graphics'    id='0' value='none'
+PROPERTY control='Env2 Velocity Label' name='labeltext'   id='0' value='Velocity'
+PROPERTY control='Env2 Velocity Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Env2 Mode' bounds='246.00 60.00 50.00 12.00' parent='Env GroupBox' layerMask='1'
+PROPERTY control='Env2 Mode' name='colours'  id='0' value='modAccent'
+PROPERTY control='Env2 Mode' name='colours'  id='1' value='modAccent'
+PROPERTY control='Env2 Mode' name='colours'  id='2' value='baseDark'
+PROPERTY control='Env2 Mode' name='graphics' id='0' value='none'
+PROPERTY control='Env2 Mode' name='graphics' id='1' value='none'
+PARAMETER control='Env2 Mode' port='integer' module='ENV2' parameter='Mode'
+
+CONTROL type='Label' name='Env2 Label' bounds='0.00 -14.00 50.00 12.00' parent='Env2 Mode' layerMask='1'
+PROPERTY control='Env2 Label' name='colours'   id='0' value='none'
+PROPERTY control='Env2 Label' name='colours'   id='1' value='baseText'
+PROPERTY control='Env2 Label' name='graphics'  id='0' value='none'
+PROPERTY control='Env2 Label' name='labeltext' id='0' value='Envelope2'
+
+/*******************************************************************************
+ *     _     ______ _____            _   _ ___________
+ *    | |    |  ___|  _  |   ___    | | | |_   _| ___ \
+ *    | |    | |_  | | | |  ( _ )   | | | | | | | |_/ /
+ *    | |    |  _| | | | |  / _ \/\ | | | | | | | ___ \
+ *    | |____| |   \ \_/ / | (_>  < \ \_/ /_| |_| |_/ /
+ *    \_____/\_|    \___/   \___/\/  \___/ \___/\____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='LfoVib GroupBox' bounds='370.00 152.00 336.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='LfoVib GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='LfoVib GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='LfoVib GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='LfoVib GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='LfoVib GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='LfoVib GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='Lfo Phase' bounds='6.00 6.00 28.00 28.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Phase' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Lfo Phase' name='graphics' id='1' value='knobMod'
+PROPERTY control='Lfo Phase' name='graphics' id='2' value='none'
+PARAMETER control='Lfo Phase' port='Knob Value' module='LFOG' parameter='Phse' valuestring='generic'
+
+CONTROL type='Label' name='Lfo Phase Label' bounds='-18.00 28.00 64.00 12.00' parent='Lfo Phase' layerMask='ffffffff'
+PROPERTY control='Lfo Phase Label' name='colours'     id='0' value='none'
+PROPERTY control='Lfo Phase Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Lfo Phase Label' name='graphics'    id='0' value='none'
+PROPERTY control='Lfo Phase Label' name='labeltext'   id='0' value='Phase'
+PROPERTY control='Lfo Phase Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Label' name='Lfo Label' bounds='157.00 6.00 29.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Label' name='colours'   id='0' value='none'
+PROPERTY control='Lfo Label' name='colours'   id='1' value='baseText'
+PROPERTY control='Lfo Label' name='graphics'  id='0' value='none'
+PROPERTY control='Lfo Label' name='labeltext' id='0' value='LFO'
+
+CONTROL type='Button On-Off' name='Lfo Active' bounds='186.00 6.00 26.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Active' name='colours'  id='0' value='modAccent'
+PROPERTY control='Lfo Active' name='colours'  id='1' value='modAccent'
+PROPERTY control='Lfo Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='Lfo Active' name='colours'  id='3' value='none'
+PROPERTY control='Lfo Active' name='colours'  id='4' value='none'
+PROPERTY control='Lfo Active' name='graphics' id='0' value='none'
+PROPERTY control='Lfo Active' name='graphics' id='1' value='none'
+PROPERTY control='Lfo Active' name='graphics' id='2' value='none'
+PROPERTY control='Lfo Active' name='graphics' id='3' value='none'
+PARAMETER control='Lfo Active' port='Button Value' module='main' parameter='#LFOG'
+
+CONTROL type='Display' name='Lfo Trigger' bounds='246.00 6.00 50.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Trigger' name='colours'  id='0' value='modAccent'
+PROPERTY control='Lfo Trigger' name='colours'  id='1' value='modAccent'
+PROPERTY control='Lfo Trigger' name='colours'  id='2' value='baseDark'
+PROPERTY control='Lfo Trigger' name='graphics' id='0' value='none'
+PROPERTY control='Lfo Trigger' name='graphics' id='1' value='none'
+PARAMETER control='Lfo Trigger' port='integer' module='LFOG' parameter='Trig'
+
+CONTROL type='Label' name='Lfo Trigger Label' bounds='50.00 0.00 30.00 12.00' parent='Lfo Trigger' layerMask='ffffffff'
+PROPERTY control='Lfo Trigger Label' name='colours'     id='0' value='none'
+PROPERTY control='Lfo Trigger Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Lfo Trigger Label' name='graphics'    id='0' value='none'
+PROPERTY control='Lfo Trigger Label' name='labeltext'   id='0' value='Trig'
+PROPERTY control='Lfo Trigger Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Lfo Sync' bounds='246.00 20.00 50.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Sync' name='colours'  id='0' value='modAccent'
+PROPERTY control='Lfo Sync' name='colours'  id='1' value='modAccent'
+PROPERTY control='Lfo Sync' name='colours'  id='2' value='baseDark'
+PROPERTY control='Lfo Sync' name='graphics' id='0' value='none'
+PROPERTY control='Lfo Sync' name='graphics' id='1' value='none'
+PARAMETER control='Lfo Sync' port='integer' module='LFOG' parameter='Sync'
+
+CONTROL type='Label' name='Lfo Sync Label' bounds='50.00 0.00 30.00 12.00' parent='Lfo Sync' layerMask='ffffffff'
+PROPERTY control='Lfo Sync Label' name='colours'     id='0' value='none'
+PROPERTY control='Lfo Sync Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Lfo Sync Label' name='graphics'    id='0' value='none'
+PROPERTY control='Lfo Sync Label' name='labeltext'   id='0' value='Sync'
+PROPERTY control='Lfo Sync Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Lfo Wave' bounds='186.00 20.00 58.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Lfo Wave' name='colours'  id='0' value='modAccent'
+PROPERTY control='Lfo Wave' name='colours'  id='1' value='modAccent'
+PROPERTY control='Lfo Wave' name='colours'  id='2' value='baseDark'
+PROPERTY control='Lfo Wave' name='graphics' id='0' value='none'
+PROPERTY control='Lfo Wave' name='graphics' id='1' value='none'
+PARAMETER control='Lfo Wave' port='integer' module='LFOG' parameter='Wave'
+
+CONTROL type='Label' name='Lfo Wave Label' bounds='-35.00 0.00 35.00 12.00' parent='Lfo Wave' layerMask='ffffffff'
+PROPERTY control='Lfo Wave Label' name='colours'     id='0' value='none'
+PROPERTY control='Lfo Wave Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Lfo Wave Label' name='graphics'    id='0' value='none'
+PROPERTY control='Lfo Wave Label' name='labeltext'   id='0' value='Wave'
+PROPERTY control='Lfo Wave Label' name='parentLabel' id='0' value='yes'
+
+/* Vibrator *******************************************************************/
+
+CONTROL type='Knob' name='Vib Phase' bounds='6.00 46.00 28.00 28.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Phase' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vib Phase' name='graphics' id='1' value='knobMod'
+PROPERTY control='Vib Phase' name='graphics' id='2' value='none'
+PARAMETER control='Vib Phase' port='Knob Value' module='VBR' parameter='Phse' valuestring='generic'
+
+CONTROL type='Label' name='Vib Phase Label' bounds='-18.00 28.00 64.00 12.00' parent='Vib Phase' layerMask='ffffffff'
+PROPERTY control='Vib Phase Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Phase Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vib Phase Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Phase Label' name='labeltext'   id='0' value='Phase'
+PROPERTY control='Vib Phase Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Vib Delay' bounds='46.00 46.00 28.00 28.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Delay' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vib Delay' name='graphics' id='1' value='knobMod'
+PROPERTY control='Vib Delay' name='graphics' id='2' value='none'
+PARAMETER control='Vib Delay' port='Knob Value' module='VBR' parameter='Dly' valuestring='generic'
+
+CONTROL type='Label' name='Vib Delay Label' bounds='-9.00 28.00 47.00 12.00' parent='Vib Delay' layerMask='ffffffff'
+PROPERTY control='Vib Delay Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Delay Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vib Delay Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Delay Label' name='labeltext'   id='0' value='Delay'
+PROPERTY control='Vib Delay Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='Vib Delay ModSrc' bounds='86.00 46.00 28.00 28.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Delay ModSrc' name='graphics' id='0' value='knobBackground'
+PROPERTY control='Vib Delay ModSrc' name='graphics' id='1' value='knobMod'
+PROPERTY control='Vib Delay ModSrc' name='graphics' id='2' value='none'
+PARAMETER control='Vib Delay ModSrc' port='Knob Value' module='VBR' parameter='DMD1' valuestring='generic'
+PARAMETER control='Vib Delay ModSrc' port='Menu'       module='VBR' parameter='DMS1'
+
+CONTROL type='Label' name='Vib Delay ModSrc Label' bounds='-9.00 28.00 47.00 12.00' parent='Vib Delay ModSrc' layerMask='ffffffff'
+PROPERTY control='Vib Delay ModSrc Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Delay ModSrc Label' name='colours'     id='1' value='modAccent'
+PROPERTY control='Vib Delay ModSrc Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Delay ModSrc Label' name='labeltext'   id='0' value='...'
+PROPERTY control='Vib Delay ModSrc Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Label' name='Vib Label' bounds='157.00 46.00 29.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Label' name='colours'   id='0' value='none'
+PROPERTY control='Vib Label' name='colours'   id='1' value='baseText'
+PROPERTY control='Vib Label' name='graphics'  id='0' value='none'
+PROPERTY control='Vib Label' name='labeltext' id='0' value='VIB'
+
+CONTROL type='Button On-Off' name='Vib Active' bounds='186.00 46.00 26.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Active' name='colours'  id='0' value='modAccent'
+PROPERTY control='Vib Active' name='colours'  id='1' value='modAccent'
+PROPERTY control='Vib Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='Vib Active' name='colours'  id='3' value='none'
+PROPERTY control='Vib Active' name='colours'  id='4' value='none'
+PROPERTY control='Vib Active' name='graphics' id='0' value='none'
+PROPERTY control='Vib Active' name='graphics' id='1' value='none'
+PROPERTY control='Vib Active' name='graphics' id='2' value='none'
+PROPERTY control='Vib Active' name='graphics' id='3' value='none'
+PARAMETER control='Vib Active' port='Button Value' module='VCC' parameter='#VBR'
+
+CONTROL type='Display' name='Vib Trigger' bounds='246.00 46.00 50.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Trigger' name='colours'  id='0' value='modAccent'
+PROPERTY control='Vib Trigger' name='colours'  id='1' value='modAccent'
+PROPERTY control='Vib Trigger' name='colours'  id='2' value='baseDark'
+PROPERTY control='Vib Trigger' name='graphics' id='0' value='none'
+PROPERTY control='Vib Trigger' name='graphics' id='1' value='none'
+PARAMETER control='Vib Trigger' port='integer' module='VBR' parameter='Trig'
+
+CONTROL type='Label' name='Vib Trigger Label' bounds='50.00 0.00 30.00 12.00' parent='Vib Trigger' layerMask='ffffffff'
+PROPERTY control='Vib Trigger Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Trigger Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vib Trigger Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Trigger Label' name='labeltext'   id='0' value='Trig'
+PROPERTY control='Vib Trigger Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Vib Sync' bounds='246.00 60.00 50.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Sync' name='colours'  id='0' value='modAccent'
+PROPERTY control='Vib Sync' name='colours'  id='1' value='modAccent'
+PROPERTY control='Vib Sync' name='colours'  id='2' value='baseDark'
+PROPERTY control='Vib Sync' name='graphics' id='0' value='none'
+PROPERTY control='Vib Sync' name='graphics' id='1' value='none'
+PARAMETER control='Vib Sync' port='integer' module='VBR' parameter='Sync'
+
+CONTROL type='Label' name='Vib Sync Label' bounds='50.00 0.00 30.00 12.00' parent='Vib Sync' layerMask='ffffffff'
+PROPERTY control='Vib Sync Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Sync Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vib Sync Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Sync Label' name='labeltext'   id='0' value='Sync'
+PROPERTY control='Vib Sync Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='Vib Wave' bounds='186.00 60.00 58.00 12.00' parent='LfoVib GroupBox' layerMask='1'
+PROPERTY control='Vib Wave' name='colours'  id='0' value='modAccent'
+PROPERTY control='Vib Wave' name='colours'  id='1' value='modAccent'
+PROPERTY control='Vib Wave' name='colours'  id='2' value='baseDark'
+PROPERTY control='Vib Wave' name='graphics' id='0' value='none'
+PROPERTY control='Vib Wave' name='graphics' id='1' value='none'
+PARAMETER control='Vib Wave' port='integer' module='VBR' parameter='Wave'
+
+CONTROL type='Label' name='Vib Wave Label' bounds='-35.00 0.00 35.00 12.00' parent='Vib Wave' layerMask='ffffffff'
+PROPERTY control='Vib Wave Label' name='colours'     id='0' value='none'
+PROPERTY control='Vib Wave Label' name='colours'     id='1' value='baseText'
+PROPERTY control='Vib Wave Label' name='graphics'    id='0' value='none'
+PROPERTY control='Vib Wave Label' name='labeltext'   id='0' value='Wave'
+PROPERTY control='Vib Wave Label' name='parentLabel' id='0' value='yes'
+
+/*******************************************************************************
+ *    ________   __
+ *    |  ___\ \ / /
+ *    | |_   \ V /
+ *    |  _|  /   \
+ *    | |   / /^\ \
+ *    \_|   \/   \/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='FX GroupBox' bounds='370.00 248.00 336.00 90.00' parent='Main Window' layerMask='1'
+PROPERTY control='FX GroupBox' name='colours'  id='0' value='none'
+PROPERTY control='FX GroupBox' name='colours'  id='1' value='groupOutline'
+PROPERTY control='FX GroupBox' name='colours'  id='2' value='none'
+PROPERTY control='FX GroupBox' name='colours'  id='3' value='none'
+PROPERTY control='FX GroupBox' name='graphics' id='0' value='none'
+PROPERTY control='FX GroupBox' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='Knob' name='FX Speed' bounds='6.00 6.00 28.00 28.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Speed' name='graphics' id='0' value='knobBackground'
+PROPERTY control='FX Speed' name='graphics' id='1' value='knobFX'
+PROPERTY control='FX Speed' name='graphics' id='2' value='none'
+PARAMETER control='FX Speed' port='Knob Value' module='FXU1' parameter='Sped' valuestring='generic'
+
+CONTROL type='Label' name='FX Speed Label' bounds='-4.00 28.00 36.00 12.00' parent='FX Speed' layerMask='ffffffff'
+PROPERTY control='FX Speed Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Speed Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Speed Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Speed Label' name='labeltext'   id='0' value='Speed'
+PROPERTY control='FX Speed Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='FX Modulation' bounds='46.00 6.00 28.00 28.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Modulation' name='graphics' id='0' value='knobBackground'
+PROPERTY control='FX Modulation' name='graphics' id='1' value='knobFX'
+PROPERTY control='FX Modulation' name='graphics' id='2' value='none'
+PARAMETER control='FX Modulation' port='Knob Value' module='FXU1' parameter='Dpth' valuestring='generic'
+
+CONTROL type='Label' name='FX Modulation Label' bounds='-4.00 28.00 36.00 12.00' parent='FX Modulation' layerMask='ffffffff'
+PROPERTY control='FX Modulation Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Modulation Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Modulation Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Modulation Label' name='labeltext'   id='0' value='Mod'
+PROPERTY control='FX Modulation Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='FX Feedback' bounds='86.00 6.00 28.00 28.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Feedback' name='graphics' id='0' value='knobBackground'
+PROPERTY control='FX Feedback' name='graphics' id='1' value='knobFX'
+PROPERTY control='FX Feedback' name='graphics' id='2' value='none'
+PARAMETER control='FX Feedback' port='Knob Value' module='FXU1' parameter='FeeB' valuestring='generic'
+
+CONTROL type='Label' name='FX Feedback Label' bounds='-4.00 28.00 36.00 12.00' parent='FX Feedback' layerMask='ffffffff'
+PROPERTY control='FX Feedback Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Feedback Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Feedback Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Feedback Label' name='labeltext'   id='0' value='Feedb'
+PROPERTY control='FX Feedback Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='FX Damp' bounds='126.00 6.00 28.00 28.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Damp' name='graphics' id='0' value='knobBackground'
+PROPERTY control='FX Damp' name='graphics' id='1' value='knobFX'
+PROPERTY control='FX Damp' name='graphics' id='2' value='none'
+PARAMETER control='FX Damp' port='Knob Value' module='FXU1' parameter='LCut' valuestring='generic'
+
+CONTROL type='Label' name='FX Damp Label' bounds='-4.00 28.00 36.00 12.00' parent='FX Damp' layerMask='ffffffff'
+PROPERTY control='FX Damp Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Damp Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Damp Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Damp Label' name='labeltext'   id='0' value='Damp'
+PROPERTY control='FX Damp Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Knob' name='FX Mix' bounds='166.00 6.00 28.00 28.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Mix' name='graphics' id='0' value='knobBackground'
+PROPERTY control='FX Mix' name='graphics' id='1' value='knobFX'
+PROPERTY control='FX Mix' name='graphics' id='2' value='none'
+PARAMETER control='FX Mix' port='Knob Value' module='FXU1' parameter='Mix' valuestring='generic'
+
+CONTROL type='Label' name='FX Mix Label' bounds='-4.00 28.00 36.00 12.00' parent='FX Mix' layerMask='ffffffff'
+PROPERTY control='FX Mix Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Mix Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Mix Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Mix Label' name='labeltext'   id='0' value='Mix'
+PROPERTY control='FX Mix Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Display' name='FX Mode' bounds='246.00 20.00 50.00 12.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Mode' name='colours'  id='0' value='fxAccent'
+PROPERTY control='FX Mode' name='colours'  id='1' value='fxAccent'
+PROPERTY control='FX Mode' name='colours'  id='2' value='baseDark'
+PROPERTY control='FX Mode' name='graphics' id='0' value='none'
+PROPERTY control='FX Mode' name='graphics' id='1' value='none'
+PARAMETER control='FX Mode' port='integer' module='FXU1' parameter='Mode'
+
+CONTROL type='Label' name='FX Mode Label' bounds='50.00 0.00 32.00 12.00' parent='FX Mode' layerMask='ffffffff'
+PROPERTY control='FX Mode Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Mode Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Mode Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Mode Label' name='labeltext'   id='0' value='Mode'
+PROPERTY control='FX Mode Label' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='FX Active' bounds='270.00 6.00 26.00 12.00' parent='FX GroupBox' layerMask='1'
+PROPERTY control='FX Active' name='colours'  id='0' value='fxAccent'
+PROPERTY control='FX Active' name='colours'  id='1' value='fxAccent'
+PROPERTY control='FX Active' name='colours'  id='2' value='baseDark'
+PROPERTY control='FX Active' name='colours'  id='3' value='none'
+PROPERTY control='FX Active' name='colours'  id='4' value='none'
+PROPERTY control='FX Active' name='graphics' id='0' value='none'
+PROPERTY control='FX Active' name='graphics' id='1' value='none'
+PROPERTY control='FX Active' name='graphics' id='2' value='none'
+PROPERTY control='FX Active' name='graphics' id='3' value='none'
+PARAMETER control='FX Active' port='Button Value' module='main' parameter='#FXU1'
+
+CONTROL type='Label' name='FX Active Label' bounds='26.00 0.00 18.00 12.00' parent='FX Active' layerMask='ffffffff'
+PROPERTY control='FX Active Label' name='colours'     id='0' value='none'
+PROPERTY control='FX Active Label' name='colours'     id='1' value='baseText'
+PROPERTY control='FX Active Label' name='graphics'    id='0' value='none'
+PROPERTY control='FX Active Label' name='labeltext'   id='0' value='FX'
+PROPERTY control='FX Active Label' name='parentLabel' id='0' value='yes'
+
+/*******************************************************************************
+ *    ____________ _____ _____ _____ _____ _____
+ *    | ___ \ ___ \  ___/  ___|  ___|_   _/  ___|
+ *    | |_/ / |_/ / |__ \ `--.| |__   | | \ `--.
+ *    |  __/|    /|  __| `--. \  __|  | |  `--. \
+ *    | |   | |\ \| |___/\__/ / |___  | | /\__/ /
+ *    \_|   \_| \_\____/\____/\____/  \_/ \____/
+ *
+ ******************************************************************************/
+
+CONTROL type='Pane' name='Presets Window' bounds='6.00 56.00 700.00 288.00' parent='Main Window' layerMask='1'
+PROPERTY control='Presets Window' name='colours'    id='0' value='baseDark'
+PROPERTY control='Presets Window' name='colours'    id='1' value='baseNormal'
+PROPERTY control='Presets Window' name='colours'    id='2' value='none'
+PROPERTY control='Presets Window' name='colours'    id='3' value='none'
+PROPERTY control='Presets Window' name='graphics'   id='0' value='none'
+PROPERTY control='Presets Window' name='layer'      id='0' value='Layer 1'
+PROPERTY control='Presets Window' name='hideOnInit' id='0' value='YES'
+PROPERTY control='Show Presets'   name='clientpane' id='1' value='Presets Window' // Link button to pane
+
+CONTROL type='Pane' name='Presets Window Folders Outline' bounds='6.00 6.00 168.00 276.00' parent='Presets Window' layerMask='1'
+PROPERTY control='Presets Window Folders Outline' name='colours'  id='0' value='none'
+PROPERTY control='Presets Window Folders Outline' name='colours'  id='1' value='baseNormal'
+PROPERTY control='Presets Window Folders Outline' name='colours'  id='2' value='none'
+PROPERTY control='Presets Window Folders Outline' name='colours'  id='3' value='none'
+PROPERTY control='Presets Window Folders Outline' name='graphics' id='0' value='none'
+PROPERTY control='Presets Window Folders Outline' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='PresetManager' name='Presets Window Folders' bounds='4.00 4.00 160.00 268.00' parent='Presets Window Folders Outline' layerMask='1'
+PROPERTY control='Presets Window Folders' name='colours'             id='0' value='none'       // Background
+PROPERTY control='Presets Window Folders' name='colours'             id='1' value='baseText'   // Text
+PROPERTY control='Presets Window Folders' name='colours'             id='2' value='baseText'   // Text selected background
+PROPERTY control='Presets Window Folders' name='colours'             id='3' value='baseDark'   // Text selected
+PROPERTY control='Presets Window Folders' name='colours'             id='4' value='baseNormal' // Scroll bar
+PROPERTY control='Presets Window Folders' name='colours'             id='5' value='none'       // Scroll bar handle
+PROPERTY control='Presets Window Folders' name='graphics'            id='0' value='none'
+PROPERTY control='Presets Window Folders' name='labeltext'           id='0' value='Presets Window Folders'
+PROPERTY control='Presets Window Folders' name='labelTextAlignment'  id='0' value='0'
+PROPERTY control='Presets Window Folders' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='Presets Window Folders' name='labelTextSize'       id='0' value='11.00'
+PROPERTY control='Presets Window Folders' name='labelTextVOffset'    id='0' value='-2.00'
+
+CONTROL type='Pane' name='Presets Window Files Outline' bounds='180.00 6.00 514.00 276.00' parent='Presets Window' layerMask='1'
+PROPERTY control='Presets Window Files Outline' name='colours'  id='0' value='none'
+PROPERTY control='Presets Window Files Outline' name='colours'  id='1' value='baseNormal'
+PROPERTY control='Presets Window Files Outline' name='colours'  id='2' value='none'
+PROPERTY control='Presets Window Files Outline' name='colours'  id='3' value='none'
+PROPERTY control='Presets Window Files Outline' name='graphics' id='0' value='none'
+PROPERTY control='Presets Window Files Outline' name='layer'    id='0' value='Layer 1'
+
+CONTROL type='PresetSelector' name='Presets Window Files' bounds='4.00 4.00 506.00 268.00' parent='Presets Window Files Outline' layerMask='1'
+PROPERTY control='Presets Window Files' name='colours'             id='0' value='none'        // Background
+PROPERTY control='Presets Window Files' name='colours'             id='1' value='baseText'    // Regular text
+PROPERTY control='Presets Window Files' name='colours'             id='2' value='baseText'    // Regular text selected background
+PROPERTY control='Presets Window Files' name='colours'             id='3' value='baseDark'    // Regular text selected
+PROPERTY control='Presets Window Files' name='colours'             id='4' value='baseNormal'  // Scroll bar
+PROPERTY control='Presets Window Files' name='colours'             id='5' value='none'        // Scroll bar handle
+PROPERTY control='Presets Window Files' name='colours'             id='6' value='favAccent'   // Favourite text
+PROPERTY control='Presets Window Files' name='colours'             id='7' value='baseDark'    // Favourite text selected
+PROPERTY control='Presets Window Files' name='colours'             id='8' value='none'        // Favourite text background
+PROPERTY control='Presets Window Files' name='colours'             id='9' value='favAccent'   // Favourite text selected background
+PROPERTY control='Presets Window Files' name='colours'             id='10' value='junkAccent' // Junk text
+PROPERTY control='Presets Window Files' name='colours'             id='11' value='baseDark'   // Junk text selected
+PROPERTY control='Presets Window Files' name='colours'             id='12' value='none'       // Junk text background
+PROPERTY control='Presets Window Files' name='colours'             id='13' value='junkAccent' // Junk text selected background
+PROPERTY control='Presets Window Files' name='graphics'            id='0' value='none'
+PROPERTY control='Presets Window Files' name='graphics'            id='1' value='favIcon'
+PROPERTY control='Presets Window Files' name='graphics'            id='2' value='junkIcon'
+PROPERTY control='Presets Window Files' name='labeltext'           id='0' value='Presets Window Files'
+PROPERTY control='Presets Window Files' name='labelTextAlignment'  id='0' value='0'
+PROPERTY control='Presets Window Files' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='Presets Window Files' name='labelTextSize'       id='0' value='11.00'
+PROPERTY control='Presets Window Files' name='labelTextVOffset'    id='0' value='-2.00'
+PROPERTY control='Presets Window Files' name='Columns'             id='1' value='2'
