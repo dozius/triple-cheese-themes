@@ -6,7 +6,7 @@ Various themes for the free synthesizer plug-in [Triple Cheese by U-he](http://w
 
 These themes are explicitly donation ware. If you find them useful, please consider a donation.
 
-https://www.paypal.me/cisc
+[![paypal me](https://img.shields.io/badge/paypal-me-blue.svg)](https://www.paypal.me/cisc)
 
 ## Enable Themes
 
