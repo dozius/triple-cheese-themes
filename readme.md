@@ -2,16 +2,6 @@
 
 Various themes for the free synthesizer plug-in [Triple Cheese by U-he](http://www.u-he.com/cms/triple-cheese).
 
-[![Download Latest](https://img.shields.io/badge/download-latest-green.svg)](https://github.com/dozius/triple-cheese-themes/releases/latest)
-[![Github All Releases](https://img.shields.io/github/downloads/dozius/triple-cheese-themes/total.svg)](https://github.com/dozius/triple-cheese-themes/releases/latest)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/cisc)
-
-## Donations
-
-These themes are explicitly donation ware. If you find them useful, please consider a donation.
-
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/cisc)
-
 ## Enable Themes
 
 Triple Cheese supports the U-He theme system. However, it is not setup properly "out of the box". Follow these directions to setup theme support.
